@@ -3,15 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-// functional imports
-import { routing } from './app.routing'
 
 // component imports
-import { VideosComponent } from './videos/videos.component';
-import { GamesComponent } from './games/games.component';
-import { CharactersComponent } from './characters/characters.component';
-import { SetsComponent } from './sets/sets.component';
+import { VideosComponent } from './videos_children/videos.component';
+import { GamesComponent } from './games_children/games.component';
+import { CharactersComponent } from './characters_children/characters.component';
+import { SetsComponent } from './sets_children/sets.component';
 
 @Component({
   selector: 'app-home',

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-products-parents',
-  templateUrl: './products-parents.component.html',
-  styleUrls: ['./products-parents.component.css']
+  templateUrl: './products_parents.component.html',
+  styleUrls: ['./products_parents.component.css']
 })
 export class ProductsParentsComponent implements OnInit {
 

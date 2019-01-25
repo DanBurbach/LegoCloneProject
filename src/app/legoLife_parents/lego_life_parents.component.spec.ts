@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductsParentsComponent } from './products-parents.component';
+import { LegoLifeParentsComponent } from './lego_life_parents.component';
 
-describe('ProductsParentsComponent', () => {
-  let component: ProductsParentsComponent;
-  let fixture: ComponentFixture<ProductsParentsComponent>;
+describe('LegoLifeParentsComponent', () => {
+  let component: LegoLifeParentsComponent;
+  let fixture: ComponentFixture<LegoLifeParentsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductsParentsComponent ]
+      declarations: [ LegoLifeParentsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductsParentsComponent);
+    fixture = TestBed.createComponent(LegoLifeParentsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
