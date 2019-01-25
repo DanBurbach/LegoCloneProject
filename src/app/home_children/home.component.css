@@ -1,0 +1,27 @@
+.navigation #navbar-brand {
+  text-align: center;
+}
+
+.navigation #nav-link {
+  text-align: left;
+  padding: 100px;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(1deg); }
+  10% { transform: rotate(-5deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(5deg); }
+  40% { transform: rotate(2deg); }
+  50% { transform: rotate(-5deg); }
+  60% { transform: rotate(1deg); }
+  70% { transform: rotate(-6deg); }
+  80% { transform: rotate(3deg); }
+  90% { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
+}
