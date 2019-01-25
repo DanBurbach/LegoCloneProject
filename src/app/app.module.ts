@@ -1,8 +1,8 @@
 // @angular imports
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgModule } from '@angular/core';
 
 // functional imports
 import { routing } from './app.routing'
@@ -30,20 +30,20 @@ import { MainPageComponent } from './main_page/main_page.component';
 
 @NgModule({
   declarations: [
-    WelcomeComponent,
     AppComponent,
-    HomeComponent,
-    VideosComponent,
-    GamesComponent,
-    CharactersComponent,
-    SetsComponent,
-    AboutComponent,
+    MainPageComponent,
+    WelcomeComponent,
     ShopParentsComponent,
     ProductsParentsComponent,
     SupportParentsComponent,
     GamesParentsComponent,
     LegoLifeParentsComponent,
-    MainPageComponent,
+    AboutComponent,
+    HomeComponent,
+    VideosComponent,
+    GamesComponent,
+    CharactersComponent,
+    SetsComponent,
   ],
   imports: [
     BrowserModule,
