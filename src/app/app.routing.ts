@@ -1,10 +1,14 @@
+// angular required imports
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// important component imports
 import { AppComponent } from './app.component';
 
+// main opening import
 import { MainPageComponent } from './main_page/main_page.component';
 
+// parents section
 import { WelcomeComponent } from './welcome_parents/welcome.component';
 import { ShopParentsComponent } from './shop_parents/shop_parents.component';
 import { ProductsParentsComponent } from './products_parents/products_parents.component';
@@ -13,6 +17,7 @@ import { GamesParentsComponent } from './games_parents/games_parents.component';
 import { LegoLifeParentsComponent } from './legoLife_parents/lego_life_parents.component';
 import { AboutComponent } from './about_parents/about.component';
 
+// childrens section
 import { HomeComponent } from './home_children/home.component';
 import { VideosComponent } from './videos_children/videos.component';
 import { GamesComponent } from './games_children/games.component';
@@ -22,7 +27,7 @@ import { SetsComponent } from './sets_children/sets.component';
 
 const appRoutes: Routes = [
   {
-    path: 'main',
+    path: '',
     component: MainPageComponent
   },
   {
