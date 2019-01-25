@@ -2,6 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+
+import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { VideosComponent } from './videos/videos.component';
 import { GamesComponent } from './games/games.component';
@@ -22,19 +24,19 @@ const appRoutes: Routes = [
   {
     path: 'videos',
     component: VideosComponent
-  }
+  },
   {
     path: 'games',
     component: GamesComponent
-  }
+  },
   {
     path: 'characters',
     component: CharactersComponent
-  }
+  },
   {
     path: 'sets',
     component: SetsComponent
-  }
+  },
   {
     path: 'about',
     component: AboutComponent

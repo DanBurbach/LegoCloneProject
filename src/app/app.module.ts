@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing'
 
 // component imports
+import { WelcomeComponent } from './welcome/welcome.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VideosComponent } from './videos/videos.component';
@@ -20,13 +21,14 @@ import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
+    WelcomeComponent
     AppComponent,
     HomeComponent,
     VideosComponent,
     GamesComponent,
     CharactersComponent,
     SetsComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

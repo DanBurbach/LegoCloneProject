@@ -3,7 +3,7 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="25" alt="Lego Logo" src="./images/stock-photo-lego-logo-printed-on-lego">
+  <img width="32" alt="Lego Logo" src="assets/images/stock-photo-lego.jpg">
 </div>
 
 
@@ -12,12 +12,12 @@
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Lego List</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="home">Home</a></li>
-      <li><a routerLink="videos">Videos</a></li>
-      <li><a routerLink="games">Games</a></li>
-      <li><a routerLink="characters">Characters</a></li>
-      <li><a routerLink="sets">Sets</a></li>
-    </ul>
+    <div class="topnav" routerLinkActive="active">
+      <a class="nav-link" routerLink="home">Home</a>
+      <a class="nav-link" routerLink="videos">Videos</a>
+      <a class="nav-link" routerLink="games">Games</a>
+      <a class="nav-link" routerLink="characters">Characters</a>
+      <a class="nav-link" routerLink="sets">Sets</a>
+    </div>
   </div>
 </nav>
