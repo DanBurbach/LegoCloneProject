@@ -1,4 +1,6 @@
 # LegoCloneProject
+## Created by Daniel Burbach
+Javascript: Angular: Re-create a website using Angular. This site is mimicing the Lego website (for learning purposes only).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
