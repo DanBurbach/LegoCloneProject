@@ -1,13 +1,21 @@
+// @angular imports
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
+// functional imports
+import { routing } from './app.routing'
 
+// component imports
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VideosComponent } from './videos/videos.component';
 import { GamesComponent } from './games/games.component';
 import { CharactersComponent } from './characters/characters.component';
 import { SetsComponent } from './sets/sets.component';
+import { AboutComponent } from './about/about.component';
+
 
 
 @NgModule({
@@ -17,10 +25,14 @@ import { SetsComponent } from './sets/sets.component';
     VideosComponent,
     GamesComponent,
     CharactersComponent,
-    SetsComponent
+    SetsComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
