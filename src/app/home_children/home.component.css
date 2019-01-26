@@ -1,5 +1,5 @@
-.navigation #navbar-brand {
-  text-align: center;
+.topnav-center {
+  float: center;
 }
 
 .navigation #nav-link {
