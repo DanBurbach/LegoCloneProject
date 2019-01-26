@@ -43,7 +43,7 @@ import { MainPageComponent } from './main_page/main_page.component';
     VideosComponent,
     GamesComponent,
     CharactersComponent,
-    SetsComponent,
+    SetsComponent
   ],
   imports: [
     BrowserModule,
