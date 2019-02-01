@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 
 
 // component imports
-import { WelcomeComponent } from './welcome_parents/welcome.component';
-import { VideosComponent } from './videos_children/videos.component';
-import { GamesComponent } from './games_children/games.component';
-import { CharactersComponent } from './characters_children/characters.component';
-import { SetsComponent } from './sets_children/sets.component';
+import { WelcomeComponent } from '../welcome_parents/welcome.component';
+import { VideosComponent } from '../videos_children/videos.component';
+import { GamesComponent } from '../games_children/games.component';
+import { CharactersComponent } from '../characters_children/characters.component';
+import { SetsComponent } from '../sets_children/sets.component';
 
 @Component({
   selector: 'app-home',

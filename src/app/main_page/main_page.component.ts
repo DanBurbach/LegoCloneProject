@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { HomeComponent } from './home_children/home.component';
-import { WelcomeComponent } from './welcome_parents/welcome.component';
+import { HomeComponent } from '../home_children/home.component';
+import { WelcomeComponent } from '../welcome_parents/welcome.component';
 
 
 @Component({
@@ -9,11 +9,8 @@ import { WelcomeComponent } from './welcome_parents/welcome.component';
   templateUrl: './main_page.component.html',
   styleUrls: ['./main_page.component.css']
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
