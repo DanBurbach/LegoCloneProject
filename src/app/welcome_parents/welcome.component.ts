@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { ShopParentsComponent } from '../shop_parents/shop_parents.component';
 import { ProductsParentsComponent } from '../products_parents/products_parents.component';
