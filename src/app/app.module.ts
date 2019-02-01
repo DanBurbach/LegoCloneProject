@@ -26,6 +26,7 @@ import { SetsComponent } from './sets_children/sets.component';
 
 // top main page select here to go to either the parents or childrens pages
 import { MainPageComponent } from './main_page/main_page.component';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { MainPageComponent } from './main_page/main_page.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    Ng2CarouselamosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

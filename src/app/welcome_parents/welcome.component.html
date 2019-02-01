@@ -1,3 +1,4 @@
+<body>
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="topnav" routerLinkActive="active">
@@ -16,33 +17,66 @@
   </div>
 </nav>
 
-<ngb-carousel class="carousel slide">
-  <div class="carousel-item-1">
-    <img alt="Happy 50th birthday to LEGO DUPLO!">
+<div id="container">
+  <div
+  ng2-carouselamos
+  [width]="500"
+  [items]="listOfItems"
+  [$item]="itemTemplate"
+  [$prev]="prevTemplate"
+  [$next]="nextTemplate"
+  (onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index"
+></div>
+
+<div>
+  Current item selected
+</div>
+
+<ng-template #prevTemplate>
+  <img src="prev.png" />
+</ng-template>
+
+<ng-template #nextTemplate>
+  <img src="next.png" />
+</ng-template>
+
+<ng-template let-item let-i="index" #itemTemplate>
+  <div style="min-width: 200px">
+    <b *ngIf="i === selectedIndex">{{i}}. {{item.name}}</b>
+    <span *ngIf="i !== selectedIndex">{{i}}. {{item.name}}</span>
+  </div>
+</ng-template>
+
+
+
+<!-- Breaker between example and attempting -->
+
+  <div id="carousel-item-1">
+    <a alt="Happy 50th birthday to LEGO DUPLO!">
     <div class="carousel-caption d-none d-md-block">
       <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
       <p>A big brick for small hands destined to take over the world. Find out what your toddler can learn with LEGO DUPLO - and what your toddler can teach you!</p>
     </div>
   </div>
 
-  <div class="carousel-item-2">
-    <img alt="LEGO City sets">
-    <div class="carousel-caption d-none d-md-block">
+  <div id="carousel-item-2">
+    <a alt="LEGO City sets">
+    <div claidss="carousel-caption d-none d-md-block">
       <h3>These LEGO City sets are on fire!</h3>
       <p>Find all the hottest new sets for your young LEGO City firefighter here.</p>
     </div>
   </div>
 
-  <div class="carousel-item-3">
-    <img alt="Digital Wellbeing">
+  <div id="carousel-item-3">
+    <a alt="Digital Wellbeing">
     <div class="carousel-caption d-none d-md-block">
       <h3>Digital Wellbeing</h3>
       <p>Prepairing kids for the digital world. Teaching your child responsible online behavior is a rewarding way to connect with them! Here's advice on helping them grow up to be good and safe digital citizens.</p>
     </div>
   </div>
 
-  <div class="carousel-item-4">
-    <img alt="LEGO City Sky Police">
+  <div id="carousel-item-4">
+    <a alt="LEGO City Sky Police">
     <div class="carousel-caption d-none d-md-block">
       <h3>High-flying Action with the LEGO City Sky Police</h3>
       <p>LEGO City Sky Police Is Clear for Takeoff</p>
@@ -50,11 +84,10 @@
     </div>
   </div>
 
-  <div class="carousel-item-5">
-    <img src="images[4]" alt="LEGO Movie 2!">
+  <div id="carousel-item-5">
+    <a alt="LEGO Movie 2!">
     <div class="carousel-caption d-none d-md-block">
       <h3>We have a lift-off!</h3>
       <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
     </div>
   </div>
-</ngb-carousel>
