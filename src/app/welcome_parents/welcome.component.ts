@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { ShopParentsComponent } from '../shop_parents/shop_parents.component';
 import { ProductsParentsComponent } from '../products_parents/products_parents.component';
@@ -14,11 +14,16 @@ import { HomeComponent } from '../home_children/home.component'
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class WelcomeComponent {
+  items: Array<any> = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.items = [
+      { name: 'assets/images/thumb1.png'},
+      { name: 'assets/images/thumb2.png'},
+      { name: 'assets/images/thumb3.png'},
+      { name: 'assets/images/thumb4.png'},
+      { name: 'assets/images/thumb5.png'},
+    ];
   }
-
 }

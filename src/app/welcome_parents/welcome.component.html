@@ -18,40 +18,34 @@
 </nav>
 
 <div id="container">
-  <div
-  ng2-carouselamos
-  [width]="500"
-  [items]="listOfItems"
-  [$item]="itemTemplate"
-  [$prev]="prevTemplate"
-  [$next]="nextTemplate"
-  (onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index"
-></div>
+        <div ng2-carouselamos class="slides-wrapper"
+          [width]="900", [items]="items", [$item]="item", [$prev]="prev", [$next]="next">
+        </div>
 
-<div>
-  Current item selected
+      <div>
+        Current item selected
+      </div>
+
+      <ng-template #prev>
+        <img src="assets/images/arrow-back.png" id="left"/>
+      </ng-template>
+
+      <ng-template #next>
+        <img src="assets/images/arrow-forward.png" id="right"/>
+      </ng-template>
+
+      <ng-template #item let-item let-i="index">
+        <div class="items">
+          <img src="{{ item.name }}">
+        </div>
+
+      </ng-template>
 </div>
-
-<ng-template #prevTemplate>
-  <img src="prev.png" />
-</ng-template>
-
-<ng-template #nextTemplate>
-  <img src="next.png" />
-</ng-template>
-
-<ng-template let-item let-i="index" #itemTemplate>
-  <div style="min-width: 200px">
-    <b *ngIf="i === selectedIndex">{{i}}. {{item.name}}</b>
-    <span *ngIf="i !== selectedIndex">{{i}}. {{item.name}}</span>
-  </div>
-</ng-template>
-
 
 
 <!-- Breaker between example and attempting -->
 
-  <div id="carousel-item-1">
+  <!-- <div id="carousel-item-1">
     <a alt="Happy 50th birthday to LEGO DUPLO!">
     <div class="carousel-caption d-none d-md-block">
       <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
@@ -90,4 +84,4 @@
       <h3>We have a lift-off!</h3>
       <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
     </div>
-  </div>
+  </div> -->
