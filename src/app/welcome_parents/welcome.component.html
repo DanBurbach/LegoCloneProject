@@ -17,14 +17,9 @@
   </div>
 </nav>
 
-<div id="container">
-        <div ng2-carouselamos class="slides-wrapper"
-          [width]="900", [items]="items", [$item]="item", [$prev]="prev", [$next]="next">
+<div class="container">
+    <div ng2-carouselamos class="slides-wrapper"[items]="items"[width]="900"[$item]="item"[$prev]="prev"[$next]="next">
         </div>
-
-      <div>
-        Current item selected
-      </div>
 
       <ng-template #prev>
         <img src="assets/images/arrow-back.png" id="left"/>
@@ -36,17 +31,15 @@
 
       <ng-template #item let-item let-i="index">
         <div class="items">
-          <img src="{{ item.name }}">
+          <img src="{{ item.name }} ">
         </div>
-
       </ng-template>
 </div>
 
 
 <!-- Breaker between example and attempting -->
-
-  <!-- <div id="carousel-item-1">
-    <a alt="Happy 50th birthday to LEGO DUPLO!">
+<div class="carousel-main">
+  <div id="carousel-item-1">
     <div class="carousel-caption d-none d-md-block">
       <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
       <p>A big brick for small hands destined to take over the world. Find out what your toddler can learn with LEGO DUPLO - and what your toddler can teach you!</p>
@@ -54,7 +47,6 @@
   </div>
 
   <div id="carousel-item-2">
-    <a alt="LEGO City sets">
     <div claidss="carousel-caption d-none d-md-block">
       <h3>These LEGO City sets are on fire!</h3>
       <p>Find all the hottest new sets for your young LEGO City firefighter here.</p>
@@ -62,7 +54,6 @@
   </div>
 
   <div id="carousel-item-3">
-    <a alt="Digital Wellbeing">
     <div class="carousel-caption d-none d-md-block">
       <h3>Digital Wellbeing</h3>
       <p>Prepairing kids for the digital world. Teaching your child responsible online behavior is a rewarding way to connect with them! Here's advice on helping them grow up to be good and safe digital citizens.</p>
@@ -70,7 +61,6 @@
   </div>
 
   <div id="carousel-item-4">
-    <a alt="LEGO City Sky Police">
     <div class="carousel-caption d-none d-md-block">
       <h3>High-flying Action with the LEGO City Sky Police</h3>
       <p>LEGO City Sky Police Is Clear for Takeoff</p>
@@ -79,9 +69,9 @@
   </div>
 
   <div id="carousel-item-5">
-    <a alt="LEGO Movie 2!">
     <div class="carousel-caption d-none d-md-block">
       <h3>We have a lift-off!</h3>
       <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
     </div>
-  </div> -->
+  </div>
+</div>

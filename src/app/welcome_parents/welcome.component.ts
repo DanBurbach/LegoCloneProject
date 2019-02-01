@@ -19,11 +19,11 @@ export class WelcomeComponent {
 
   constructor() {
     this.items = [
-      { name: 'assets/images/thumb1.png'},
-      { name: 'assets/images/thumb2.png'},
-      { name: 'assets/images/thumb3.png'},
-      { name: 'assets/images/thumb4.png'},
-      { name: 'assets/images/thumb5.png'},
+      { name: 'assets/images/LEGO-DUPLO-50th-640x336.jpg', },
+      { name: 'assets/images/LegoCitysets.jpeg' },
+      { name: 'assets/images/LegoDigitalWellbeing.jpeg' },
+      { name: 'assets/images/LegoCitySkyPolice.jpeg' },
+      { name: 'assets/images/LegoMovie2.jpg' },
     ];
   }
 }
