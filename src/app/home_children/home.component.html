@@ -1,11 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    <!-- Welcome to {{ title }}! -->
-  </h1>
-</div>
-
-
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navigation">
@@ -18,6 +10,18 @@
         <div class="topnav-center">
           <img src="assets/images/stock-photo-lego.jpg" class="navbar-brand"  width="32" alt="Lego Logo"  routerLink="">
         </div>
+      </div>
+      <div class="topnav-right">
+        <a routerLink="welcome">FOR PARENTS</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li *ngIf="isLoggedIn">
+            <a>{{userName}}</a>
+            <a (click)="logout()">Log out</a>
+          </li>
+          <li *ngIf ="!isLoggedIn">
+            <a (click)="login()">Log in</a>
+          </li>
+        </ul>
       </div>
     </div>
     </div>

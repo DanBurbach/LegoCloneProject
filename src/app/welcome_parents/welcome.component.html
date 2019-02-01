@@ -12,7 +12,17 @@
       <a routerLink="legoLife">LEGO® LIFE</a>
       <div class="topnav-right">
         <a routerLink="home">FOR KIDS</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li *ngIf="isLoggedIn">
+            <a>{{userName}}</a>
+            <a (click)="logout()">Log out</a>
+          </li>
+          <li *ngIf ="!isLoggedIn">
+            <a (click)="login()">Log in</a>
+          </li>
+        </ul>
       </div>
+
     </div>
   </div>
 </nav>
@@ -76,6 +86,10 @@
   </div>
 </div>
 
+
+<p *ngIf="isLoggedIn">
+  Here's some bonus content for signed-in users.
+</p>
 <!-- third attempt at carosel -->
 
 <!-- <body ng-controller="MyCtrl" >

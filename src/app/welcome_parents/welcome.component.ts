@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import * as firebase from 'firebase';
+import { AuthenticationService } from './authentication.service';
 
 import { ShopParentsComponent } from '../shop_parents/shop_parents.component';
 import { ProductsParentsComponent } from '../products_parents/products_parents.component';
@@ -13,12 +14,16 @@ import { HomeComponent } from '../home_children/home.component'
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+  styleUrls: ['./welcome.component.css'],
+  providers: [AuthenticationService]
 })
 export class WelcomeComponent {
   items: Array<any> = [];
+  private user;
+  private isLoggedIn: Boolean = null;
+  private userName: String;
 
-  constructor() {
+  constructor(public authService: AuthenticationService, private router: Router) {
     this.items = [
       { name: 'assets/images/LEGO-DUPLO-50th-640x336.jpg', },
       { name: 'assets/images/LegoCitysets.jpeg' },
@@ -26,5 +31,28 @@ export class WelcomeComponent {
       { name: 'assets/images/LegoCitySkyPolice.jpeg' },
       { name: 'assets/images/LegoMovie2.jpg' },
     ];
-  }
+    this.authService.user.subscribe(user =>  {
+      if (user == null) {
+        this.isLoggedIn = false;
+        // this.router.navigate(['public']);
+      } else {
+      this.isLoggedIn = true;
+      this.userName = user.displayName;
+      this.router.navigate([]);
+    }
+  });
+}
+
+login() {
+  this.authService.login();
+}
+
+logout() {
+  this.authService.logout();
+}
+
+ngDoCheck() {
+  this.user = firebase.auth().currentUser;
+  console.log(this.user);
+}
 }

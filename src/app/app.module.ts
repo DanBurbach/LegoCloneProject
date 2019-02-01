@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
 // functional imports
 import { routing } from './app.routing'
 import { AppComponent } from './app.component';
-import { masterFirebaseConfig } from './api-keys';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 // parents component imports
 import { WelcomeComponent } from './welcome_parents/welcome.component';
@@ -27,7 +27,14 @@ import { SetsComponent } from './sets_children/sets.component';
 
 // top main page select here to go to either the parents or childrens pages
 import { MainPageComponent } from './main_page/main_page.component';
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+
+// important import files for authentication
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -59,7 +66,7 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     routing,
-    Ng2CarouselamosModule
+    Ng2CarouselamosModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
