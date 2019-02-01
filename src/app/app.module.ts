@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 // functional imports
 import { routing } from './app.routing'
 import { AppComponent } from './app.component';
+import { masterFirebaseConfig } from './api-keys';
 
 // parents component imports
 import { WelcomeComponent } from './welcome_parents/welcome.component';
@@ -28,7 +29,13 @@ import { SetsComponent } from './sets_children/sets.component';
 import { MainPageComponent } from './main_page/main_page.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
-
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket,
+  messagingSenderId: masterFirebaseConfig.messagingSenderId
+};
 
 @NgModule({
   declarations: [
@@ -53,6 +60,9 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
     HttpModule,
     routing,
     Ng2CarouselamosModule
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
