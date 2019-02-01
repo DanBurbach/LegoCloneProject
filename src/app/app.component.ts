@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthenticationService } from './authentication.service';
-import { Router, RouterModule } from '@angular/router';
 
 import { MainPageComponent } from './main_page/main_page.component';
 

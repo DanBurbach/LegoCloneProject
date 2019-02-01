@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
-import { AuthenticationService } from './authentication.service';
+import { Router, RouterModule } from '@angular/router';
+import { AuthenticationService } from '../authentication/authentication.service';
 
 import { ShopParentsComponent } from '../shop_parents/shop_parents.component';
 import { ProductsParentsComponent } from '../products_parents/products_parents.component';
@@ -19,7 +20,7 @@ import { HomeComponent } from '../home_children/home.component'
 })
 export class WelcomeComponent {
   items: Array<any> = [];
-  private user;
+  user;
   private isLoggedIn: Boolean = null;
   private userName: String;
 
@@ -34,11 +35,11 @@ export class WelcomeComponent {
     this.authService.user.subscribe(user =>  {
       if (user == null) {
         this.isLoggedIn = false;
-        // this.router.navigate(['public']);
+        // this.router.navigate(['welcome']);
       } else {
       this.isLoggedIn = true;
       this.userName = user.displayName;
-      this.router.navigate([]);
+      this.router.navigate(['']);
     }
   });
 }
@@ -53,6 +54,5 @@ logout() {
 
 ngDoCheck() {
   this.user = firebase.auth().currentUser;
-  console.log(this.user);
 }
 }

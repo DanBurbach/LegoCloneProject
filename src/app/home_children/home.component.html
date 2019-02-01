@@ -1,6 +1,7 @@
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navigation">
+
       <div class="topnav" routerLinkActive="active">
         <a routerLink="home"><img src="assets/images/Home_btn_off_Lego.png" width="32" class="nav-link" ></a>
         <a routerLink="videos"><img src="assets/images/Video_btn_off_Lego.png" width="32" class="nav-link"></a>
@@ -11,8 +12,10 @@
           <img src="assets/images/stock-photo-lego.jpg" class="navbar-brand"  width="32" alt="Lego Logo"  routerLink="">
         </div>
       </div>
+
       <div class="topnav-right">
         <a routerLink="welcome">FOR PARENTS</a>
+
         <ul class="nav navbar-nav navbar-right">
           <li *ngIf="isLoggedIn">
             <a>{{userName}}</a>
@@ -23,6 +26,7 @@
           </li>
         </ul>
       </div>
+
     </div>
     </div>
 </nav>
