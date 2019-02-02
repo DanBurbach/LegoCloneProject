@@ -35,9 +35,11 @@ body {
 
 .item {
     padding-top: 100px;
-    max-width: 100%;
+    max-width: 2000px;
+    max-height: 500px;
     height: 500px;
     background-color: white;
+    background-position: top;
 }
 
 #left, #right {
