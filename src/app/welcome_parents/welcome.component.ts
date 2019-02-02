@@ -25,34 +25,29 @@ export class WelcomeComponent {
   private userName: String;
 
   constructor(public authService: AuthenticationService, private router: Router) {
-    this.items = [
-      { name: 'assets/images/LEGO-DUPLO-50th-640x336.jpg', },
-      { name: 'assets/images/LegoCitysets.jpeg' },
-      { name: 'assets/images/LegoDigitalWellbeing.jpeg' },
-      { name: 'assets/images/LegoCitySkyPolice.jpeg' },
-      { name: 'assets/images/LegoMovie2.jpg' },
-    ];
+
     this.authService.user.subscribe(user =>  {
       if (user == null) {
         this.isLoggedIn = false;
-        // this.router.navigate(['welcome']);
+        this.router.navigate(['welcome']);
       } else {
       this.isLoggedIn = true;
       this.userName = user.displayName;
-      this.router.navigate(['']);
-    }
-  });
-}
+      this.router.navigate(['welcome']);
+      }
+    });
+  }
 
-login() {
-  this.authService.login();
-}
+  login() {
+    this.authService.login();
+  }
 
-logout() {
-  this.authService.logout();
-}
+  logout() {
+    this.authService.logout();
+  }
 
-ngDoCheck() {
-  this.user = firebase.auth().currentUser;
-}
+  ngDoCheck() {
+    this.user = firebase.auth().currentUser;
+    console.log(this.user);
+  }
 }

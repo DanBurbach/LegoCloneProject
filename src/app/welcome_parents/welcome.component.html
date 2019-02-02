@@ -1,16 +1,16 @@
 <body>
-<nav class="navbar navbar-fixed-top">
+  <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="topnav" routerLinkActive="active">
       <div class="topnav-left">
-        <a routerLink="welcome"><img src="assets/images/stock-photo-lego.jpg" class="navbar-brand"  width="52" alt="Lego Logo"></a>
+        <a routerLink="welcome"><img src="assets/images/stock-photo-lego.jpg" class="navbar-brand"  width="57" alt="Lego Logo"></a>
       </div>
-      <a routerLink="shop">Shop</a>
-      <a routerLink="products">Products</a>
-      <a routerLink="support">Support</a>
-      <a routerLink="games_parents">Games</a>
-      <a routerLink="legoLife">LEGO® LIFE</a>
-      <div class="topnav-right">
+        <a routerLink="shop">Shop</a>
+        <a routerLink="products">Products</a>
+        <a routerLink="support">Support</a>
+        <a routerLink="games_parents">Games</a>
+        <a routerLink="legoLife">LEGO® LIFE</a>
+        <div class="topnav-right">
         <a routerLink="home">FOR KIDS</a>
 
         <ul class="nav navbar-nav navbar-right">
@@ -22,97 +22,88 @@
             <a (click)="login()">Log in</a>
           </li>
         </ul>
-        
+
       </div>
 
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+
 
 <div class="container">
-    <div ng2-carouselamos class="slides-wrapper"[items]="items"[width]="900"[$item]="item"[$prev]="prev"[$next]="next">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <div id="carousel-item-1">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
+            <p>A big brick for small hands destined to take over the world. Find out what your toddler can learn with LEGO DUPLO - and what your toddler can teach you!</p>
+          </div>
         </div>
+      </div>
 
-      <ng-template #prev>
-        <img src="assets/images/arrow-back.png" id="left"/>
-      </ng-template>
-
-      <ng-template #next>
-        <img src="assets/images/arrow-forward.png" id="right"/>
-      </ng-template>
-
-      <ng-template #item let-item let-i="index">
-        <div class="items">
-          <img src="{{ item.name }} ">
+      <div class="item">
+      <div id="carousel-item-2">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>These LEGO City sets are on fire!</h3>
+          <p>Find all the hottest new sets for your young LEGO City firefighter here.</p>
         </div>
-      </ng-template>
+      </div>
+    </div>
+
+    <div class="item">
+      <div id="carousel-item-3">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Digital Wellbeing</h3>
+          <p>Prepairing kids for the digital world. Teaching your child responsible online behavior is a rewarding way to connect with them! Here's advice on helping them grow up to be good and safe digital citizens.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div id="carousel-item-4">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>High-flying Action with the LEGO City Sky Police</h3>
+          <p>LEGO City Sky Police Is Clear for Takeoff</p>
+          <p>LEGO City crooks have taken flight - it's time to bring crime-fighting action to new heights!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div id="carousel-item-5">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>We have a lift-off!</h3>
+          <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
 </div>
 
 
-<!-- Breaker between example and attempting -->
-<div class="carousel-main">
-  <div id="carousel-item-1">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
-      <p>A big brick for small hands destined to take over the world. Find out what your toddler can learn with LEGO DUPLO - and what your toddler can teach you!</p>
-    </div>
-  </div>
-
-  <div id="carousel-item-2">
-    <div claidss="carousel-caption d-none d-md-block">
-      <h3>These LEGO City sets are on fire!</h3>
-      <p>Find all the hottest new sets for your young LEGO City firefighter here.</p>
-    </div>
-  </div>
-
-  <div id="carousel-item-3">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>Digital Wellbeing</h3>
-      <p>Prepairing kids for the digital world. Teaching your child responsible online behavior is a rewarding way to connect with them! Here's advice on helping them grow up to be good and safe digital citizens.</p>
-    </div>
-  </div>
-
-  <div id="carousel-item-4">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>High-flying Action with the LEGO City Sky Police</h3>
-      <p>LEGO City Sky Police Is Clear for Takeoff</p>
-      <p>LEGO City crooks have taken flight - it's time to bring crime-fighting action to new heights!</p>
-    </div>
-  </div>
-
-  <div id="carousel-item-5">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>We have a lift-off!</h3>
-      <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
-    </div>
-  </div>
-</div>
 
 
 <p *ngIf="isLoggedIn">
   Here's some bonus content for signed-in users.
 </p>
-<!-- third attempt at carosel -->
-
-<!-- <body ng-controller="MyCtrl" >
-    <md-card layout="column" layout-align="center center" style="padding-bottom: 10px" >
-      <h3>Basic Carousel setup</h3>
-      <jk-carousel
-        data="dataArray"
-        item-template-url="'item-template.html'"
-        max-width="900"
-        max-height="500" >
-        </jk-carousel>
-    </md-card>
-    <md-card layout="column" layout-align="center center" style="padding-bottom: 10px" >
-      <h3>AutoSlide Carousel</h3>
-      <jk-carousel
-        data="dataArray"
-        item-template-url="'item-template.html'"
-        max-width="800"
-        max-height="500"
-        auto-slide="true"
-        auto-slide-time="2000" >
-        </jk-carousel>
-    </md-card>
-  </body> -->

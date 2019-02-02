@@ -29,18 +29,16 @@ body {
   float: right;
 }
 
-#container {
-    background-size: cover;
-    background-position: center;
-    margin: 5em auto;
-    padding: 0;
-    background:#fff;
+#myCarousel {
+  padding-top: 100px;
+
 }
 
-.items {
-    max-width:100%;
-    height:500px;
-    background:#ECECEC;
+.item {
+    padding-top: 100px;
+    max-width: 100%;
+    height: 500px;
+    background-color: white;
 }
 
 #left, #right {
@@ -48,34 +46,34 @@ body {
     width: 20px;
 }
 
-.carousel-item-1 {
+#myCarousel #carousel-item-1 {
   background-image: url('/assets/images/LEGO-DUPLO-50th-640x336.jpg');
   background-repeat: no-repeat;
   color: black;
 }
 
-.carousel-item-2 {
+#myCarousel #carousel-item-2 {
   background-image: url('/assets/images/LegoCitysets.jpeg');
   background-repeat: no-repeat;
   color: white;
   text-shadow: 2px 2px black;
 }
 
-.carousel-item-3 {
+#myCarousel #carousel-item-3 {
   background-image: url('/assets/images/LegoDigitalWellbeing.jpeg');
   background-repeat: no-repeat;
   color: white;
   text-shadow: 2px 2px black;
 }
 
-.carousel-item-4 {
+#myCarousel #carousel-item-4 {
   background-image: url('/assets/images/LegoCitySkyPolice.jpeg');
   background-repeat: no-repeat;
   color: white;
   text-shadow: 2px 2px black;
 }
 
-.carousel-item-5 {
+#myCarousel #carousel-item-5 {
   background-image: url('/assets/images/LegoMovie2.jpg');
   background-repeat: no-repeat;
   color: white;
