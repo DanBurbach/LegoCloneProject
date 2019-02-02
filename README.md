@@ -1,19 +1,25 @@
 # LegoCloneProject
-Javascript: Angular: Re-create a website using Angular. This site is mimicing the Lego website (for learning purposes only).
+
+Javascript: Angular: Re-create a website using Angular. This site is mimicing the Lego website (for educational purposes only).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
 #### By Daniel Burbach
 
 ## Description
+
 A cloned version of the Lego.com website using Javascript and Angular methods.
 
 ## Support and contact details
+
 Feel free to contact me with any suggestions or questions.
 
 ## Technologies Used
+
 HTML, CSS, Javascript, Node.js, Atom, Angular, and webpack
 
 ## Setup/Installation Requirements
+
 1. git clone: https://github.com/DanBurbach/LegoCloneProject.git
 
 2. Navigate into this repo and download dependencies using manager of your choice: npm install
@@ -24,9 +30,9 @@ HTML, CSS, Javascript, Node.js, Atom, Angular, and webpack
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Known Bugs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There are many. This should be considered a further work in progress and not considered more than what could be finished in the time allowed.
 
 ## Build
 
@@ -36,18 +42,28 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Accomplishments
+
+- Fixed routing, but now log in blocks the user from seeing the main screen
+
+- Incorporated Firebase log in that gathers user name and email from Google log in.
+
+- Have a rotating carousel. Which was much of the difficulty that I came across. Still does not load onto screen properly.
+
 ## Further development
 
 - Currently the project is running into errors with routing. Planning on fixing that.
-- Incorporate an API pulling from a Lego build database.
-- Check to see if Lego has a log in and incorporate that.
+
 - Incorporate better CSS and HTML (to "match" the Lego website)
+
 - If I can, use and incorporate a video API of Lego related material.
 
 ### License
+
 Licensed under the MIT license.
 
-Copyright <2019> <Daniel Burbach>
+Copyright 2019, Daniel Burbach
+(CREATED FOR EDUCATIONAL PURPOSES ONLY!!!)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
