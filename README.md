@@ -24,11 +24,41 @@ HTML, CSS, Javascript, Node.js, Atom, Angular, and webpack
 
 2. Navigate into this repo and download dependencies using manager of your choice: npm install
 
-3. $ np serve --open to run
+3. create an entry in .gitignore:
 
-## Development server
+#Firebase credentials
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+/src/app/api-keys.ts
+
+(to protect from api-key theft, save this independently before any further editing/saving)
+
+4. create a firebase api key and place in the following:
+
+src/app/api-keys.ts .  ------
+
+export const masterFirebaseConfig = {
+
+    apiKey: "xxxx",
+    
+    authDomain: "xxxx.firebaseapp.com",
+    
+    databaseURL: "https://xxxx.firebaseio.com",
+    
+    storageBucket: "xxxx.appspot.com",
+    
+    messagingSenderId: "xxxx"
+    
+  };
+
+5. $ np serve --open to run
+
+6. to see a working page, go to `http://localhost:4200/welcome`
+(there is still log in issue blocking the main page from loading.)
+
+## Hosted
+Yes it is hosted, although currently does not actually show anything besides a blank page (due to log in problems)
+
+It can be found here: https://legoprojectsignin.firebaseapp.com/
 
 ## Known Bugs
 
