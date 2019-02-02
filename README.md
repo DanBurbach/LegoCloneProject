@@ -55,6 +55,10 @@ export const masterFirebaseConfig = {
 6. to see a working page, go to `http://localhost:4200/welcome`
 (there is still log in issue blocking the main page from loading.)
 
+## Hosted
+Yes it is hosted, although currently does not actually show anything besides a blank page (due to log in problems)
+
+It can be found here: https://legoprojectsignin.firebaseapp.com/
 
 ## Known Bugs
 
