@@ -11,17 +11,17 @@
         <a routerLink="games_parents">Games</a>
         <a routerLink="legoLife">LEGO® LIFE</a>
         <div class="topnav-right">
-        <a routerLink="home">FOR KIDS</a>
+          <a routerLink="home">FOR KIDS</a>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li *ngIf="isLoggedIn">
-            <a>{{userName}}</a>
-            <a (click)="logout()">Log out</a>
-          </li>
-          <li *ngIf ="!isLoggedIn">
-            <a (click)="login()">Log in</a>
-          </li>
-        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="isLoggedIn">
+              <a>{{userName}}</a>
+              <a (click)="logout()">Log out</a>
+            </li>
+            <li *ngIf ="!isLoggedIn">
+              <a (click)="login()">Log in</a>
+            </li>
+          </ul>
 
       </div>
 
@@ -43,49 +43,44 @@
 
     <div class="carousel-inner">
       <div class="item active">
-        <div id="carousel-item-1">
-          <div class="carousel-caption d-none d-md-block">
+        <img src="/assets/images/LEGO-DUPLO-50th-640x336.jpg">
+          <div class="carousel-caption">
             <h3>Happy 50th birthday to LEGO DUPLO - never too old to play!</h3>
             <p>A big brick for small hands destined to take over the world. Find out what your toddler can learn with LEGO DUPLO - and what your toddler can teach you!</p>
           </div>
-        </div>
       </div>
 
       <div class="item">
-      <div id="carousel-item-2">
-        <div class="carousel-caption d-none d-md-block">
+      <img src="/assets/images/LegoCitysets.jpeg">
+        <div class="carousel-caption">
           <h3>These LEGO City sets are on fire!</h3>
           <p>Find all the hottest new sets for your young LEGO City firefighter here.</p>
         </div>
-      </div>
     </div>
 
     <div class="item">
-      <div id="carousel-item-3">
-        <div class="carousel-caption d-none d-md-block">
+      <img src="/assets/images/LegoDigitalWellbeing.jpeg">
+        <div class="carousel-caption">
           <h3>Digital Wellbeing</h3>
           <p>Prepairing kids for the digital world. Teaching your child responsible online behavior is a rewarding way to connect with them! Here's advice on helping them grow up to be good and safe digital citizens.</p>
         </div>
-      </div>
     </div>
 
     <div class="item">
-      <div id="carousel-item-4">
-        <div class="carousel-caption d-none d-md-block">
+      <img src="/assets/images/LegoCitySkyPolice.jpeg">
+        <div class="carousel-caption">
           <h3>High-flying Action with the LEGO City Sky Police</h3>
           <p>LEGO City Sky Police Is Clear for Takeoff</p>
           <p>LEGO City crooks have taken flight - it's time to bring crime-fighting action to new heights!</p>
         </div>
-      </div>
     </div>
 
     <div class="item">
-      <div id="carousel-item-5">
-        <div class="carousel-caption d-none d-md-block">
+      <img src="/assets/images/LegoMovie2.jpg">
+        <div class="carousel-caption">
           <h3>We have a lift-off!</h3>
           <p>The new sets from THE LEGO MOVIE 2 just launched - and they're ready to send you and your kids on an epic building journey!</p>
         </div>
-      </div>
     </div>
 
     </div>

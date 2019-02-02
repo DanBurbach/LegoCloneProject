@@ -3,12 +3,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.topnav {
-  overflow: hidden;
+.navbar {
+
   color: black;
 }
 
-.topnav a {
+.navbar a {
   float: left;
   color: black;
   text-align: center;
@@ -17,11 +17,11 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.navbar a:hover {
   color: grey;
 }
 
-.topnav a.active {
+.navbar a.active {
   color: grey;
 }
 
@@ -30,8 +30,7 @@ body {
 }
 
 #myCarousel {
-  padding-top: 100px;
-
+  padding-top: 60px;
 }
 
 .item {
@@ -42,40 +41,18 @@ body {
 }
 
 #left, #right {
-    margin: 30px;
-    width: 20px;
+    margin: 20px;
+    width: 30px;
 }
 
-#myCarousel #carousel-item-1 {
+.carousel-caption2 {
   background-image: url('/assets/images/LEGO-DUPLO-50th-640x336.jpg');
   background-repeat: no-repeat;
   color: black;
 }
 
-#myCarousel #carousel-item-2 {
-  background-image: url('/assets/images/LegoCitysets.jpeg');
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-#myCarousel #carousel-item-3 {
-  background-image: url('/assets/images/LegoDigitalWellbeing.jpeg');
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-#myCarousel #carousel-item-4 {
-  background-image: url('/assets/images/LegoCitySkyPolice.jpeg');
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-#myCarousel #carousel-item-5 {
-  background-image: url('/assets/images/LegoMovie2.jpg');
-  background-repeat: no-repeat;
+.carousel-caption {
+  background-position: top;
   color: white;
   text-shadow: 2px 2px black;
 }
