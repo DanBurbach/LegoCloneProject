@@ -35,27 +35,27 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'shop',
+    path: 'welcome/shop',
     component: ShopParentsComponent
   },
   {
-    path: 'products',
+    path: 'welcome/products',
     component: ProductsParentsComponent
   },
   {
-    path: 'support',
+    path: 'welcome/support',
     component: SupportParentsComponent
   },
   {
-    path: 'games_parents',
+    path: 'welcome/games_parents',
     component: GamesParentsComponent
   },
   {
-    path: 'legoLife',
+    path: 'welcome/legoLife',
     component: LegoLifeParentsComponent
   },
   {
-    path: 'about',
+    path: 'welcome/about',
     component: AboutComponent
   },
   {
@@ -63,19 +63,19 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'videos',
+    path: 'home/videos',
     component: VideosComponent
   },
   {
-    path: 'games',
+    path: 'home/games',
     component: GamesComponent
   },
   {
-    path: 'characters',
+    path: 'home/characters',
     component: CharactersComponent
   },
   {
-    path: 'sets',
+    path: 'home/sets',
     component: SetsComponent
   }
 ];
